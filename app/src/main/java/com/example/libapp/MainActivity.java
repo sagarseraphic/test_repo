@@ -7,6 +7,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
 
+import com.example.my_test_lib.LibActivity;
+
 
 public class MainActivity extends AppCompatActivity {
 
@@ -18,8 +20,9 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+
     public void goToLib(View view) {
-        //startActivityForResult(new Intent(this, LibActivity.class), 101);
+        startActivityForResult(new Intent(this, LibActivity.class), 101);
     }
 
     @Override
